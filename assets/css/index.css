@@ -1,0 +1,197 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "inter", "poppins";
+  font-weight: 500;
+}
+body {
+  background: rgb(189, 187, 187);
+  height: 100vh;
+}
+.container {
+  /* width: 100vh; */
+}
+nav {
+  display: flex;
+  background: white;
+  height: 70px;
+  justify-content: space-around;
+}
+.logo img {
+  height: 60px;
+  margin-left: -30px;
+  margin: 15px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  font-weight: 400;
+  font-size: 0.75em;
+  margin-right: 100px;
+}
+.menu ul li {
+  margin: 15px 25px;
+}
+.burger {
+  margin-top: 25px;
+  display: none;
+}
+.line {
+  padding: 1.5px 10px;
+  background: black;
+  margin: 5px;
+  margin-right: 70px;
+}
+
+/* section */
+.background {
+  width: 100%;
+  position: relative;
+  background-image: url("/assets/imgs/woman-drawing\ 2.png");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  height: 400px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: 400px;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  text-align: center;
+}
+.overlay h1 {
+  margin: auto;
+  margin-top: 150px;
+  font-family: "Aclonica", sans-serif;
+  color: aliceblue;
+}
+.unlishing {
+  font-family: "Aclonica", sans-serif;
+  color: orange;
+  font-size: 1.3em;
+}
+.rwandan {
+  font-family: "Aclonica", sans-serif;
+  color: rgb(1, 255, 1);
+  font-size: 1.3em;
+}
+.talent {
+  font-family: "Aclonica", sans-serif;
+  color: rgb(255, 123, 0);
+  font-size: 1.3em;
+}
+.overlay p {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-top: 100px;
+  /* background: linear-gradient(blue, yellow); */
+}
+/* search bar */
+.search {
+  margin: 10px 550px;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 250px;
+  display: flex;
+}
+.search img {
+  height: 25px;
+  margin: 3px;
+}
+.search input[type="text"] {
+  border: none;
+  margin: 5px;
+  margin-left: 10px;
+  background: none;
+}
+.search placeholder {
+  margin: 5px;
+  background: none;
+  font-size: 1.6em;
+}
+/* REsponsiveness */
+@media screen and (max-width: 1000px) {
+  .logo img {
+    height: 60px;
+    margin-left: 20px;
+    margin: 15px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    font-weight: 400;
+    font-size: 0.75em;
+    margin-right: 60px;
+  }
+  .menu ul li {
+    margin: 15px 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu ul {
+    font-weight: 400;
+    font-size: 0.68em;
+  }
+  .menu ul li {
+    margin: 15px 10px;
+  }
+}
+@media screen and (max-width: 650px) {
+  nav {
+    height: 60px;
+    justify-content: space-around;
+  }
+  .logo img {
+    height: 50px;
+    margin-left: 40px;
+    margin: 12px;
+  }
+  .menu ul {
+    font-weight: 400;
+    font-size: 0.62em;
+  }
+  .menu ul li {
+    margin: 15px 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav {
+    height: 60px;
+    justify-content: first baseline;
+    position: relative;
+  }
+  .logo img {
+    height: 50px;
+    margin: 12px;
+    margin-right: 100px;
+    position: absolute;
+    left: 0px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    right: -20px;
+    margin-bottom: 20px;
+  }
+}
