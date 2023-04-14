@@ -52,6 +52,9 @@ nav {
 .burger {
   margin-top: 25px;
   display: none;
+  cursor: pointer;
+  width: 30px;
+  margin-right: 40px;
 }
 .line {
   padding: 1.5px 10px;
@@ -103,13 +106,23 @@ nav {
 }
 .mcontent ul li {
   margin: 20px;
+  transition: 0.5s;
 }
-
-/* section */
+.mcontent ul li a {
+  color: white;
+}
+.mcontent ul li a:hover {
+  color: brown;
+}
+/* .burger:hover,
+  .menu-container {
+    display: block;
+  } */
+/* section .....................................------------______*/
 .background {
   width: 100%;
   position: relative;
-  background-image: url("/assets/imgs/woman-drawing\ 2.png");
+  background-image: url("/assets/imgs/photograpy3.jpg");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
@@ -117,12 +130,12 @@ nav {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   width: inherit;
   height: 400px;
   position: absolute;
   /* top: 0;
-  left: 0; */
+      left: 0; */
   text-align: center;
 }
 .overlay h1 {
@@ -151,163 +164,9 @@ nav {
   font-size: 1.3em;
   font-weight: 700;
   margin-top: 100px;
-  /* background: linear-gradient(blue, yellow); */
-}
-/* search bar */
-.search {
-  margin: 10px 450px;
-  border: 2px solid black;
-  border-radius: 50px;
-  width: 250px;
-  display: flex;
-}
-.search img {
-  height: 25px;
-  margin: 3px;
-}
-.search input[type="text"] {
-  border: none;
-  margin: 5px;
-  margin-left: 10px;
-  background: none;
-}
-.search placeholder {
-  margin: 5px;
-  background: none;
-  font-size: 1.6em;
-}
-/* picture gallery */
-.gallery {
-  display: block;
-  margin: 10px 50px;
-}
-.section1 {
-  display: flex;
-  margin-bottom: 20px;
-}
-.section2 {
-  display: flex;
-  margin-bottom: 20px;
-}
-.section3 {
-  display: flex;
-  margin-bottom: 20px;
-}
-.section4 {
-  display: flex;
-  margin-bottom: 20px;
-}
-.section1 img {
-  margin: 25px;
-  height: 250px;
-  width: 150px;
-}
-.photo-content {
-  display: flex;
-  justify-content: space-around;
-}
-.description {
-  text-align: left;
 }
 
-.description h4 {
-  font-size: 0.7em;
-  font-weight: 600;
-}
-.description p {
-  font-size: 0.7em;
-  width: 200px;
-}
-.buy {
-  font-size: 0.72em;
-}
-.card {
-  background: rgba(255, 255, 255, 0.3);
-  margin: 5px;
-}
-.card-photo {
-  height: 220px;
-  width: 280px;
-  background-position: center center;
-  background-repeat: none;
-  background-size: cover;
-  margin: 0px 10px 10px 10px;
-}
-.card-photo1 {
-  background-image: url("/assets/imgs/one.png");
-}
-.card-photo2 {
-  background-image: url("/assets/imgs/zebra.svg");
-}
-.card-photo3 {
-  background-image: url("/assets/imgs/monkey.svg");
-}
-.card-photo4 {
-  background-image: url("/assets/imgs/costa.png");
-}
-.card-photo5 {
-  background-image: url("/assets/imgs/baby.png");
-}
-.card-photo6 {
-  background-image: url("/assets/imgs/image\ 4.jpeg");
-}
-.card-photo7 {
-  background-image: url("/assets/imgs/hen.png");
-}
-.card-photo8 {
-  background-image: url("/assets/imgs/hen.png");
-}
-.card-photo9 {
-  background-image: url("/assets/imgs/intore.jpg");
-}
-.card-photo10 {
-  background-image: url("/assets/imgs/download.jpg");
-}
-.card-photo11 {
-  background-image: url("/assets/imgs/Image\ 1.jpeg");
-}
-.card-photo12 {
-  background-image: url("/assets/imgs/Image\ 2.jpeg");
-}
-.card-photo13 {
-  background-image: url("/assets/imgs/image\ 3.jpeg");
-}
-.card-photo14 {
-  background-image: url("/assets/imgs/craft\ 2.jpg");
-}
-.card-photo15 {
-  background-image: url("/assets/imgs/photograpy3.jpg");
-}
-.card-photo16 {
-  background-image: url("/assets/imgs/photograpy4.jpg");
-}
-
-.join-section {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-.blue-cards {
-  height: 200px;
-  width: 150px;
-  border-radius: 15px;
-  background: blue;
-  margin: 20px;
-  display: block;
-  align-items: center;
-}
-.blue-cards img {
-  height: 200px;
-  width: 200px;
-  margin-left: -25px;
-}
-.blue-cards p {
-  font-size: 0.7em;
-  font-weight: 600;
-  margin-top: -40px;
-  text-align: center;
-}
-/* footer ///////////////////////////////////////*/
+/* footer /////////////////////////////////////////////////////////// */
 footer {
   display: block;
   background: grey;
@@ -423,7 +282,7 @@ footer {
     margin: 15px 5px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   nav {
     height: 60px;
     justify-content: first baseline;
