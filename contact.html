@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
-    <link rel="stylesheet" href="./assets/css/signup.css" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./assets/css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,9 +28,9 @@
                   <li> <a href="index.html"> HOME</a></li>
                   <li><a href="category.html"> CATEGORIES</a></li>
                   <li><a href=""> ART ARCHIVE</a></li>
-                  <li><a href="active"> INSPIRATION BLOG</a></li>
+                  <li><a href="inspiration-blog.html"> INSPIRATION BLOG</a></li>
                   <li><a href="">ABOUT US</a> </li>
-                  <li><a href="more"> More</a></li>
+                  <li><a href=""> More</a></li>
                 </ul>
         </div>
         </div>
@@ -43,9 +43,9 @@
             <li> <a href="index.html"> HOME</a></li>
             <li><a href="categories"> CATEGORIES</a></li>
             <li><a href=""> ART ARCHIVE</a></li>
-            <li><a href="active"> INSPIRATION BLOG</a></li>
-            <li><a href="">ABOUT US</a> </li>
-            <li><a href="more"> More</a></li>
+            <li><a href="inspiration-blog.html"> INSPIRATION BLOG</a></li>
+            <li><a href="about.html">ABOUT US</a> </li>
+            <li><a href=""> More</a></li>
           </ul>
         </div>
         <div class="burger" id="burger">
@@ -70,104 +70,23 @@
           <!-- <img src="./assets/imgs/woman-drawing 2.png" alt="" /> -->
           <div class="overlay">
             <h1>
-              <span class="unlishing">SIGN UP</span
+              <span class="unlishing">CONTACT US</span
               ><span class="rwandan"> </span
               ></br><span class="talent"></span>
             </h1>
-                <div class="sign-buttons">
-                    <button class="button btnactive" id="artist-btn">As an Artist</button>
-                    <button class="button" id="user-btn">As a User</button>
-                </div>
+                <h3>Leave us a message.</h3>
             </div>
         </div>
        <div class="artist-content" id="artist-content">
         <form  class="form" action="#">
-            <div>
-                <input type="text" name="Fname" placeholder="FIRST NAME">
-                <input type="text" name="Sname" placeholder="SECOND NAME">
-                
-            </div>
-            <div>
+                      
                 <input type="text" name="username" placeholder="USERNAME">
-                <input type="email" name="email" placeholder="EMAIL">
-               
-                
-            </div>
-            <div>
-                
-                <input type="text" name="Pnumber" placeholder="PHONE NUMBER">
-                <input type="text" name="username" placeholder="ART CATEGORY">
-               <div class="art-cat">
-                    <ul>
-                        <li>Painting</li>
-                        <li>Craft and wood work</li>
-                        <li>Literature</li>
-                        <li>Music</li>
-                        <li>Sculptures</li>
-                        <li>Fashion</li>
-                    </ul></div>    
-            </div>
-            <div>
-                <input type="password" name="password" placeholder="PASSWORD">
-                <input type="password" name="cpassword" placeholder="CONFIRM PASSWORD">
-            </div>
-            <div class="check">
-            <input type="checkbox" name="agree" id="agree">
-            <p>By clicking signup you agree to agree to our <span class="terms">terms and conditions </span></p>
-        </div>
-            <button>SIGN UP</button>
+                <input type="email" name="email" placeholder="EMAIL">  
+                <input type="text-area" name="message" placeholder="MESSAGE">    
+            <button>SEND</button>
         </form>
        </div>
-       <div class="artist-content user-content" id="user-content">
-        <form  class="form" action="#">
-            <div>
-                <input type="text" name="Fname" placeholder="FIRST NAME">
-                <input type="text" name="Sname" placeholder="SECOND NAME">
-                
-            </div>
-            <div>
-                <input type="text" name="username" placeholder="USERNAME">
-                <input type="email" name="email" placeholder="EMAIL">
-               
-                
-            </div>
-            <div>
-                
-                
-                   
-            </div>
-            <div>
-                <input type="password" name="password" placeholder="PASSWORD">
-                <input type="password" name="cpassword" placeholder="CONFIRM PASSWORD">
-            </div>
-            <div class="check">
-            <input type="checkbox" name="agree" id="agree">
-            <p>By clicking signup you agree to agree to our <span class="terms">terms and conditions </span></p>
-        </div>
-            <button>SIGN UP</button>
-        </form>
-       </div>
-       
-       <script>
-        let artistBtn = document.getElementById("artist-btn");
-        let userBtn = document.getElementById("user-btn");
-        let formArtist = document.getElementById("artist-content");
-        let formUser = document.getElementById("user-content");
 
-        artistBtn.addEventListener('click', ()=>{
-            artistBtn.style.background = 'orangered';
-            userBtn.style.background = 'rgb(2, 170, 196)';
-            formArtist.style.display = 'block';
-            formUser.style.display = 'none';
-        })
-        userBtn.addEventListener('click', ()=>{
-            userBtn.style.background = 'orangered';
-            formUser.style.display = 'block';
-            formArtist.style.display = 'none';
-            artistBtn.style.background = 'rgb(2, 170, 196)';
-        })
-
-       </script>
         
     
     

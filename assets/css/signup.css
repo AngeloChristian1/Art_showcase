@@ -5,7 +5,7 @@
   font-weight: 500;
 }
 body {
-  background: rgb(189, 187, 187);
+  background: rgb(250, 250, 250);
   height: 100vh;
   position: relative;
 }
@@ -114,10 +114,7 @@ nav {
 .mcontent ul li a:hover {
   color: brown;
 }
-/* .burger:hover,
-  .menu-container {
-    display: block;
-  } */
+
 /* section .....................................------------______*/
 .background {
   width: 100%;
@@ -166,10 +163,72 @@ nav {
   margin-top: 100px;
 }
 
+/* content............................ */
+.sign-buttons {
+}
+.button {
+  padding: 20px 30px;
+  font-size: 1.2em;
+  color: white;
+  background: rgb(2, 170, 196);
+  border: none;
+  margin: 30px;
+}
+/* .btnactive {
+  background: orangered;
+} */
+.artist-content {
+  margin: auto;
+  margin: 40px 20%;
+  transition: 0.5s;
+}
+#artist-content {
+  display: none;
+}
+#user-content {
+  display: none;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 15px 40px;
+  margin: 10px 40px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background: none;
+  font-size: 1em;
+}
+.art-cat {
+  margin-left: 500px;
+  display: none;
+}
+.check {
+  display: flex;
+  margin: 15px;
+}
+.check p {
+  margin-left: 10px;
+}
+form button {
+  padding: 10px 15px;
+  margin: 20px 20px 20px 340px;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  border: none;
+  border: 1px solid black;
+  transition: 0.4s;
+}
+form button:hover {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid black;
+}
+
 /* footer /////////////////////////////////////////////////////////// */
 footer {
   display: block;
-  background: grey;
+  background: black;
   padding: 20px;
   color: white;
 }
@@ -212,7 +271,7 @@ footer {
   margin-top: 100px;
 }
 .footer-section2 {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
   margin-top: 15px;
   text-align: center;
   padding: 5px;

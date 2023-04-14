@@ -5,7 +5,7 @@
   font-weight: 500;
 }
 body {
-  background: rgb(189, 187, 187);
+  background: rgb(250, 250, 250);
   height: 100vh;
   position: relative;
 }
@@ -114,10 +114,7 @@ nav {
 .mcontent ul li a:hover {
   color: brown;
 }
-/* .burger:hover,
-.menu-container {
-  display: block;
-} */
+
 /* section .....................................------------______*/
 .background {
   width: 100%;
@@ -135,7 +132,7 @@ nav {
   height: 400px;
   position: absolute;
   /* top: 0;
-    left: 0; */
+        left: 0; */
   text-align: center;
 }
 .overlay h1 {
@@ -143,6 +140,10 @@ nav {
   margin-top: 150px;
   font-family: "Aclonica", sans-serif;
   color: aliceblue;
+}
+.overlay h3 {
+  color: white;
+  margin-top: 50px;
 }
 .unlishing {
   font-family: "Aclonica", sans-serif;
@@ -165,136 +166,66 @@ nav {
   font-weight: 700;
   margin-top: 100px;
 }
-/* search bar */
-.search {
-  margin: 10px;
-  border: none;
-  border-bottom: 2px solid black;
-  width: 200px;
-  height: 30px;
-  display: flex;
-  margin-bottom: 20px;
-}
-.search img {
-  height: 25px;
-  padding: 4px 1px;
-  width: 30px;
-  margin-bottom: 30px;
-  background: rgba(251, 202, 167, 0.5);
-  border-radius: 100px;
-}
-.search input[type="text"] {
-  border: none;
-  outline: none;
-  margin: 5px;
-  margin-left: 10px;
-  background: none;
-}
-.search placeholder {
-  margin: 5px;
-  background: none;
-  font-size: 1.6em;
-}
-.search-container {
-  display: flex;
-}
-.filter-search {
-  margin-left: 20px;
-  border-left: 2px solid black;
-  padding-left: 20px;
-}
-.filter-content {
-  padding-left: 20px;
-}
-.filter-content p {
-  margin: 15px;
-  text-decoration: underline;
-  font-weight: 600;
-}
-.filter-content input {
-}
-/* content......................... */
 
-.blog-content {
-  margin: 20px 80px;
-  display: block;
+/* content............................ */
+.sign-buttons {
 }
-.blog-content h3 {
-  font-weight: 700;
-}
-.read img {
-  height: 200px;
-  width: 170px;
-  margin: 10px;
-}
-.blog-title {
-  text-align: center;
-  text-transform: uppercase;
-}
-.artist-week {
-  display: flex;
-  margin: 20px;
-  /* background: white; */
-}
-.artist-week img {
-  height: 200px;
-  width: 220px;
-  margin: 10px;
-}
-.artist-week h4 {
-  font-weight: 600;
-  margin-top: 20px;
-}
-.artist-week p {
-  margin-top: 20px;
-  width: 500px;
-}
-.more {
-  font-weight: 600;
-}
-.more-view {
-  display: block;
-}
-.more-view p {
-  width: 100px;
-  margin: 5px;
-}
-.follow {
-  display: flex;
-}
-.follow p {
-  font-size: 1em;
-  background: brown;
-  border-radius: 30px;
-  padding: 5px;
-  text-align: center;
-}
-.read h3 {
+.button {
+  padding: 20px 30px;
+  font-size: 1.2em;
+  color: white;
+  background: rgb(2, 170, 196);
+  border: none;
   margin: 30px;
 }
-.rows {
+/* .btnactive {
+    background: orangered;
+  } */
+.artist-content {
+  margin: auto;
+  margin: 100px 20%;
+  transition: 0.5s;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="text-area"] {
+  padding: 15px 40px 10px 20px;
+  margin: 10px 40px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background: none;
+  font-size: 1em;
+}
+form input[type="text-area"] {
+  margin-top: 40px;
+  padding: 15px 70px 15px 20px;
+}
+.art-cat {
+  margin-left: 500px;
+  display: none;
+}
+.check {
   display: flex;
-  margin-bottom: 30px;
-  margin-right: 10px;
+  margin: 15px;
 }
-.read-row1 {
-  display: flex;
-  /* background: white; */
-  margin: 10px;
-  border-bottom: 1px solid black;
+.check p {
+  margin-left: 10px;
 }
-.read-section {
-  /* display: flex; */
+form button {
+  padding: 10px 15px;
+  margin: 50px 20px 20px 340px;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  border: none;
+  border: 1px solid black;
+  transition: 0.4s;
 }
-.thread-content {
-  margin-top: 20px;
-}
-.thread-content h4 {
-  font-weight: 600;
-}
-.thread-content p {
-  margin-top: 10px;
-  width: 400px;
+form button:hover {
+  background: brown;
+  border: 1px solid black;
 }
 
 /* footer /////////////////////////////////////////////////////////// */
