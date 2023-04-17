@@ -8,9 +8,7 @@ body {
   background: rgb(189, 187, 187);
   height: 100vh;
 }
-.container {
-  /* width: 100vh; */
-}
+
 nav {
   display: flex;
   background: white;
