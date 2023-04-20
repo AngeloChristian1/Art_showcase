@@ -5,9 +5,10 @@
   font-weight: 500;
 }
 body {
-  background: rgb(189, 187, 187);
+  background: rgba(165, 42, 42, 0.102);
   height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 body a {
   text-decoration: none;
@@ -25,11 +26,12 @@ body a:hover {
 nav {
   display: flex;
   background: white;
-  height: 70px;
+  height: 100px;
   justify-content: space-around;
+  border-bottom: 1px solid black;
 }
 .logo img {
-  height: 60px;
+  height: 70px;
   margin-left: -30px;
   margin: 15px;
 }
@@ -43,7 +45,7 @@ nav {
   list-style: none;
   display: flex;
   font-weight: 400;
-  font-size: 0.75em;
+  font-size: 1em;
   margin-right: 100px;
 }
 .menu ul li {
@@ -109,13 +111,50 @@ nav {
 .background {
   width: 100%;
   position: relative;
-  background-image: url("/assets/imgs/woman-drawing\ 2.png");
-  background-position: center center;
-  background-repeat: none;
+  /* background-image: url("/assets/imgs/lines2\ bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: white;
+  height: 90vh;
+  display: flex;
+  position: relative;
+  margin: 0px;
+}
+.lines {
+  background-image: url("/assets/imgs/lines3\ bg.png");
+  background-position: center;
+  filter: opacity(0.2);
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 89vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 0;
+  top: 10px;
+  margin: 0px;
 }
 
+.woman {
+  width: 35%;
+  height: 80vh;
+  margin: 0px 0px 0px 80px;
+  z-index: 5;
+
+  /* background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  background-image: none; */
+  /* url(/assets/imgs/woman\ bg\ 1.svg) */
+}
+.woman img {
+  height: 90vh;
+  width: 100%;
+  /* background: red; */
+}
+.home-content {
+  margin: 100px auto;
+}
 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   width: inherit;
@@ -125,37 +164,51 @@ nav {
   left: 0; */
   text-align: center;
 }
-.overlay h1 {
+.home-content h1 {
   margin: auto;
-  margin-top: 150px;
+  margin-top: 50px;
   font-family: "Aclonica", sans-serif;
   color: aliceblue;
+  text-align: center;
+  font-size: 4.6em;
 }
 .unlishing {
   font-family: "Aclonica", sans-serif;
   color: orange;
-  font-size: 1.3em;
+  z-index: 10;
 }
 .rwandan {
   font-family: "Aclonica", sans-serif;
   color: rgb(1, 255, 1);
-  font-size: 1.3em;
 }
 .talent {
   font-family: "Aclonica", sans-serif;
   color: rgb(255, 123, 0);
-  font-size: 1.3em;
 }
-.overlay p {
-  color: white;
-  font-size: 1.3em;
+.home-content p {
+  color: black;
+  text-align: center;
+  font-size: 1.7em;
   font-weight: 700;
-  margin-top: 100px;
+  margin: 30px 0px 70px 0px;
   /* background: linear-gradient(blue, yellow); */
+}
+.home-content a {
+  text-align: center;
+  margin-left: 300px;
+  color: white;
+  padding: 20px;
+  border-radius: 40px;
+  background: black;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.home-content a:hover {
+  background: brown;
 }
 /* search bar */
 .search {
-  margin: 10px 450px;
+  margin: 50px auto;
   border: 2px solid black;
   border-radius: 50px;
   width: 250px;
@@ -176,26 +229,98 @@ nav {
   background: none;
   font-size: 1.6em;
 }
+
+/* filter */
+.filter-search {
+  margin-left: 20px;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+.home-filter {
+  padding-left: 20px;
+  margin: auto 100px;
+  align-items: center;
+}
+.selector {
+  /* margin: 15px; */
+  /* text-decoration: underline; */
+  font-weight: 600;
+  font-size: 1.2em;
+  /* border: 1px solid black; */
+  /* padding: 10px; */
+  /* border-radius: 20px; */
+
+  /* text-align: center; */
+  /* color: white;
+  background: black; */
+}
+.selector p {
+}
+.filter {
+  display: inline-flex;
+}
+.ftitle {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: brown;
+}
+.choice {
+  margin: 0px 5px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sel {
+  display: flex;
+  margin: 15px;
+}
+.sel2 {
+  width: 20px;
+  height: 20px;
+  background: rgb(11, 11, 11);
+  margin-left: 15px;
+  border: 2px solid black;
+  border-radius: 40px;
+  margin-top: 0px;
+}
+.sel3 {
+  width: 7px;
+  height: 7px;
+  /* background: white; */
+  margin-left: 5px;
+  margin-top: 3px;
+  border: 3px solid rgb(255, 254, 254);
+  rotate: 45deg;
+  border-top: none;
+  border-left: none;
+  transition: 0.4s;
+}
+#filter1,
+#filter2,
+#filter3,
+#filter4 {
+  display: none;
+}
 /* picture gallery */
 .gallery {
   display: block;
-  margin: 10px 50px;
+  margin: 50px 200px;
 }
 .section1 {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section2 {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section3 {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section4 {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section1 img {
   margin: 25px;
@@ -223,7 +348,7 @@ nav {
 }
 .card {
   background: rgba(255, 255, 255, 0.3);
-  margin: 5px;
+  margin: 15px;
 }
 .card-photo {
   height: 220px;
@@ -282,6 +407,21 @@ nav {
   background-image: url("/assets/imgs/photograpy4.jpg");
 }
 
+.buy {
+  display: flex;
+}
+.section1 .buy img {
+  height: 35px;
+}
+.buy img {
+  margin-right: 5px;
+  height: 20px;
+}
+.buy div strong {
+  font-weight: 600;
+  margin-top: 25px;
+  font-size: 1.2em;
+}
 .join-section {
   display: flex;
   margin: auto;
@@ -291,7 +431,7 @@ nav {
   height: 200px;
   width: 150px;
   border-radius: 15px;
-  background: blue;
+  background: rgba(62, 62, 239, 1);
   margin: 20px;
   display: block;
   align-items: center;
@@ -310,7 +450,7 @@ nav {
 /* footer ///////////////////////////////////////*/
 footer {
   display: block;
-  background: grey;
+  background: rgb(9, 9, 9);
   padding: 20px;
   color: white;
 }
@@ -353,7 +493,7 @@ footer {
   margin-top: 100px;
 }
 .footer-section2 {
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(255, 255, 255);
   margin-top: 15px;
   text-align: center;
   padding: 5px;

@@ -27,10 +27,10 @@
             <ul>
               <li> <a href="index.html"> HOME</a></li>
               <li><a href="category.html"> CATEGORIES</a></li>
-              <li><a href=""> ART ARCHIVE</a></li>
+              <li><a href=""> ART </a></li>
               <li><a href="active"> INSPIRATION BLOG</a></li>
-              <li><a href="">ABOUT US</a> </li>
-              <li><a href="more"> More</a></li>
+              <li><a href="about.html">ABOUT US</a> </li>
+              <li><a href="#"> More</a></li>
             </ul>
     </div>
     </div>
@@ -43,8 +43,8 @@
         <li> <a href="index.html"> HOME</a></li>
         <li><a href="category.html"> CATEGORIES</a></li>
         <li><a href=""> ART ARCHIVE</a></li>
-        <li><a href="active"> INSPIRATION BLOG</a></li>
-        <li><a href="">ABOUT US</a> </li>
+        <li><a href="inspiration-blog.html"> INSPIRATION BLOG</a></li>
+        <li><a href="about.html">ABOUT US</a> </li>
         <li><a href="more"> More</a></li>
       </ul>
     </div>
@@ -56,22 +56,141 @@
       </nav>
       <section>
         <div class="background">
+          <div class="lines"></div>
           <!-- <img src="./assets/imgs/woman-drawing 2.png" alt="" /> -->
-          <div class="overlay">
+          <div class="woman">
+            <img src="./assets/imgs/woman bg 1.svg" alt="">
+          </div>
+          <div class="home-content">
             <h1>
               <span class="unlishing">UNLEASHING </span
               ></br><span class="rwandan">RWANDAN </span
               ><span class="talent">TALENT</span>
             </h1>
             <p>Showing the beauty of Rwandan and </br>her people through art</p>
-          </div>
+            <p>Join the best art marketplace in the region</p>
+            <a href="signup.html"> CREATE ACCOUNT</a>
+         </div>
         </div>
         <div class="search">
           <img src="./assets/imgs/search_log.svg" alt="search">
           <input type="text" placeholder="search art or artist">
         </div>
+        <div class="home-filter">
+          <p class="ftitle">Filters</p>
+          <div class="sel">
+            <p class="selector">Artist</p>
+            <div class="sel2" id="fil1">
+              <div class="sel3" id="arr1"></div>
+            </div>
+          </div>
+            <div class="filter" id="filter1">
+           <p class="choice"> John</p>
+            <p class="choice">Robert</p>
+            <p class="choice">Mugisha</p>
+          </div>
+
+          <div class="sel">
+            <p class="selector">Time Added</p>
+            <div class="sel2" id="fil2">
+              <div class="sel3" id="arr2"></div>
+            </div>
+          </div>
+          <div class="filter" id="filter2">
+            <p class="choice">Yesterday</p>
+            <p class="choice">This week</p>
+            <p class="choice">Last Year</p>
+          </div>
+
+          <div class="sel">
+            <p class="selector">Category</p>
+            <div class="sel2" id="fil3">
+              <div class="sel3" id="arr3"></div>
+            </div>
+          </div>
+          <div class="filter" id="filter3">
+            <p class="choice">Woodwork</p>
+            <p class="choice">Craft</p>
+            <p class="choice"> Paintings</p>
+          </div>
+
+          <div class="sel">
+            <p class="selector">Material</p>
+            <div class="sel2" id="fil4">
+              <div class="sel3" id="arr4"></div>
+            </div>
+          </div>
+          <div class="filter" id="filter4">
+            <p class="choice">Wood</p>
+            <p class="choice">Paper</p>
+            <p class="choice">clay</p>
+          </div>
+          
+
+          <script>
+            let fil1 = document.getElementById('fil1');
+            let arr1 = document.getElementById('arr1');
+            let filter1 = document.getElementById('filter1');
+            fil1.addEventListener('click', ()=>{
+              if(filter1.style.display == 'none'){
+              filter1.style.display = 'flex';
+              arr1.style.rotate = '225deg'
+             }
+             else {
+              filter1.style.display = 'none';
+              arr1.style.rotate = '45deg'
+             }
+            })
+          </script>
+          <script>
+            let fil2 = document.getElementById('fil2');
+            let arr2 = document.getElementById('arr2');
+            let filter2 = document.getElementById('filter2');
+            fil2.addEventListener('click', ()=>{
+              if(filter2.style.display == 'none'){
+              filter2.style.display = 'flex';
+              arr2.style.rotate = '225deg'
+             }
+             else {
+              filter2.style.display = 'none';
+              arr2.style.rotate = '45deg'
+             }
+            })
+          </script>
+          <script>
+            let fil3 = document.getElementById('fil3');
+            let arr3 = document.getElementById('arr3');
+            let filter3 = document.getElementById('filter3');
+            fil3.addEventListener('click', ()=>{
+              if(filter3.style.display == 'none'){
+              filter3.style.display = 'flex';
+              arr3.style.rotate = '225deg'
+             }
+             else {
+              filter3.style.display = 'none';
+              arr3.style.rotate = '45deg'
+             }
+            })
+          </script>
+          <script>
+            let fil4 = document.getElementById('fil4');
+            let arr4 = document.getElementById('arr4');
+            let filter4 = document.getElementById('filter4');
+            fil4.addEventListener('click', ()=>{
+              if(filter4.style.display == 'none'){
+              filter4.style.display = 'flex';
+              arr4.style.rotate = '225deg'
+             }
+             else {
+              filter4.style.display = 'none';
+              arr4.style.rotate = '45deg'
+             }
+            })
+          </script>
+        
+        </div>
         <div class="gallery">
-          <div class= "photos section1">
+          <div class= "photos section2">
             
               <div class="card card1">
                 <div class="card-photo card-photo1"></div>
@@ -84,8 +203,9 @@
                        <p> 48 x 36 in 120x 90 cm</p>
                   </div>
                   <div class="buy">
-                    <p>RWF 100,000</p>
-                    <p><strong> view more</strong></p>
+                    <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+                    <div> <p>RWF 100,000</p>
+                    <p><strong> view more</strong></p></div>
                   </div>
               </div>
            </div>
@@ -100,8 +220,9 @@
                  <p> 48 x 36 in 120x 90 cm</p>
             </div>
             <div class="buy">
-              <p>RWF 100,000</p>
-              <p><strong> view more</strong></p>
+              <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+              <div> <p>RWF 100,000</p>
+              <p><strong> view more</strong></p></div>
             </div>
         </div>
           </div>
@@ -115,8 +236,9 @@
                  <p> 48 x 36 in 120x 90 cm</p>
             </div>
             <div class="buy">
-              <p>RWF 100,000</p>
-              <p><strong> view more</strong></p>
+              <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+              <div> <p>RWF 100,000</p>
+              <p><strong> view more</strong></p></div>
             </div>
         </div>
           </div>
@@ -130,8 +252,9 @@
                  <p> 48 x 36 in 120x 90 cm</p>
             </div>
             <div class="buy">
-              <p>RWF 100,000</p>
-              <p><strong> view more</strong></p>
+              <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+              <div> <p>RWF 100,000</p>
+              <p><strong> view more</strong></p></div>
             </div>
         </div>
           </div>
@@ -149,8 +272,9 @@
                      <p> 48 x 36 in 120x 90 cm</p>
                 </div>
                 <div class="buy">
-                  <p>RWF 100,000</p>
-                  <p><strong> view more</strong></p>
+                  <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+                  <div> <p>RWF 100,000</p>
+                  <p><strong> view more</strong></p></div>
                 </div>
             </div>
          </div>
@@ -165,8 +289,9 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div> <p>RWF 100,000</p>
+            <p><strong> view more</strong></p></div>
           </div>
       </div>
         </div>
@@ -180,8 +305,9 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div> <p>RWF 100,000</p>
+            <p><strong> view more</strong></p></div>
           </div>
       </div>
         </div>
@@ -195,8 +321,9 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div> <p>RWF 100,000</p>
+            <p><strong> view more</strong></p></div>
           </div>
       </div>
         </div>
@@ -214,8 +341,9 @@
                      <p> 48 x 36 in 120x 90 cm</p>
                 </div>
                 <div class="buy">
-                  <p>RWF 100,000</p>
-                  <p><strong> view more</strong></p>
+                  <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+                  <div> <p>RWF 100,000</p>
+                  <p><strong> view more</strong></p></div>
                 </div>
             </div>
          </div>
@@ -230,8 +358,9 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div> <p>RWF 100,000</p>
+            <p><strong> view more</strong></p></div>
           </div>
       </div>
         </div>
@@ -260,8 +389,9 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div> <p>RWF 100,000</p>
+            <p><strong> view more</strong></p></div>
           </div>
       </div>
         </div>
@@ -281,8 +411,9 @@
                      <p> 48 x 36 in 120x 90 cm</p>
                 </div>
                 <div class="buy">
-                  <p>RWF 100,000</p>
-                  <p><strong> view more</strong></p>
+                  <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+                  <div> <p>RWF 100,000</p>
+                  <p><strong> view more</strong></p></div>
                 </div>
             </div>
          </div>
@@ -297,8 +428,9 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div> <p>RWF 100,000</p>
+            <p><strong> view more</strong></p></div>
           </div>
       </div>
         </div>
@@ -312,8 +444,9 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div> <p>RWF 100,000</p>
+            <p><strong> view more</strong></p></div>
           </div>
       </div>
         </div>
@@ -327,8 +460,9 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div> <p>RWF 100,000</p>
+            <p><strong> view more</strong></p></div>
           </div>
       </div>
         </div>
@@ -337,18 +471,21 @@
       </div>
 
       <div class="join-section">
-        <div class="blue-cards">
+        <a href="signup.html">
+           <div class="blue-cards">
           <img src="./assets/imgs/backup.svg" alt="backup">
          <p> UPLOAD YOUR ART </p>
-        </div>
+        </div></a>
+        <a href="contact.html">
         <div class="blue-cards">
           <img src="./assets/imgs/contact.svg" alt="backup">
           <p> CONTACT US </p>
-        </div>
+        </div></a>
+        <a href="signup.html">
         <div class="blue-cards">
           <img src="./assets/imgs/join.svg" alt="backup">
           <p> JOIN US </p>
-        </div>
+        </div></a>
       </div>
     </section>
       <footer>

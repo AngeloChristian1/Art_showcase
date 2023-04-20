@@ -74,79 +74,81 @@
               ><span class="rwandan"> </span
               ></br><span class="talent"></span>
             </h1>
+            <h3>
+              Already have an account <a href="signup.html">Log in</a> here
+            </h3>
                 <div class="sign-buttons">
                     <button class="button btnactive" id="artist-btn">As an Artist</button>
                     <button class="button" id="user-btn">As a User</button>
                 </div>
+                <div class="artist-content" id="artist-content">
+                  <form  class="form" action="#">
+                      <div>
+                          <input type="text" name="Fname" placeholder="FIRST NAME">
+                          <input type="text" name="Sname" placeholder="SECOND NAME">
+                          
+                      </div>
+                      <div>
+                          <input type="text" name="username" placeholder="USERNAME">
+                          <input type="email" name="email" placeholder="EMAIL">
+                         
+                          
+                      </div>
+                      <div>
+                          
+                          <input type="text" name="Pnumber" placeholder="PHONE NUMBER">
+                          <input type="text" name="username" placeholder="ART CATEGORY">
+                         <div class="art-cat">
+                              <ul>
+                                  <li>Painting</li>
+                                  <li>Craft and wood work</li>
+                                  <li>Literature</li>
+                                  <li>Music</li>
+                                  <li>Sculptures</li>
+                                  <li>Fashion</li>
+                              </ul></div>    
+                      </div>
+                      <div>
+                          <input type="password" name="password" placeholder="PASSWORD">
+                          <input type="password" name="cpassword" placeholder="CONFIRM PASSWORD">
+                      </div>
+                      <div class="check">
+                      <input type="checkbox" name="agree" id="agree">
+                      <p>By clicking signup you agree to agree to our <span class="terms">terms and conditions </span></p>
+                  </div>
+                      <button>SIGN UP</button>
+                  </form>
+                 </div>
+                 <div class="artist-content user-content" id="user-content">
+                  <form  class="form" action="#">
+                      <div>
+                          <input type="text" name="Fname" placeholder="FIRST NAME">
+                          <input type="text" name="Sname" placeholder="SECOND NAME">
+                          
+                      </div>
+                      <div>
+                          <input type="text" name="username" placeholder="USERNAME">
+                          <input type="email" name="email" placeholder="EMAIL">
+                         
+                          
+                      </div>
+                      <div>
+                         
+                      </div>
+                      <div>
+                          <input type="password" name="password" placeholder="PASSWORD">
+                          <input type="password" name="cpassword" placeholder="CONFIRM PASSWORD">
+                      </div>
+                      <div class="check">
+                      <input type="checkbox" name="agree" id="agree">
+                      <p>By clicking signup you agree to agree to our <span class="terms">terms and conditions </span></p>
+                  </div>
+                      <button>SIGN UP</button>
+                  </form>
+                 </div>
             </div>
         </div>
-       <div class="artist-content" id="artist-content">
-        <form  class="form" action="#">
-            <div>
-                <input type="text" name="Fname" placeholder="FIRST NAME">
-                <input type="text" name="Sname" placeholder="SECOND NAME">
-                
-            </div>
-            <div>
-                <input type="text" name="username" placeholder="USERNAME">
-                <input type="email" name="email" placeholder="EMAIL">
-               
-                
-            </div>
-            <div>
-                
-                <input type="text" name="Pnumber" placeholder="PHONE NUMBER">
-                <input type="text" name="username" placeholder="ART CATEGORY">
-               <div class="art-cat">
-                    <ul>
-                        <li>Painting</li>
-                        <li>Craft and wood work</li>
-                        <li>Literature</li>
-                        <li>Music</li>
-                        <li>Sculptures</li>
-                        <li>Fashion</li>
-                    </ul></div>    
-            </div>
-            <div>
-                <input type="password" name="password" placeholder="PASSWORD">
-                <input type="password" name="cpassword" placeholder="CONFIRM PASSWORD">
-            </div>
-            <div class="check">
-            <input type="checkbox" name="agree" id="agree">
-            <p>By clicking signup you agree to agree to our <span class="terms">terms and conditions </span></p>
-        </div>
-            <button>SIGN UP</button>
-        </form>
-       </div>
-       <div class="artist-content user-content" id="user-content">
-        <form  class="form" action="#">
-            <div>
-                <input type="text" name="Fname" placeholder="FIRST NAME">
-                <input type="text" name="Sname" placeholder="SECOND NAME">
-                
-            </div>
-            <div>
-                <input type="text" name="username" placeholder="USERNAME">
-                <input type="email" name="email" placeholder="EMAIL">
-               
-                
-            </div>
-            <div>
-                
-                
-                   
-            </div>
-            <div>
-                <input type="password" name="password" placeholder="PASSWORD">
-                <input type="password" name="cpassword" placeholder="CONFIRM PASSWORD">
-            </div>
-            <div class="check">
-            <input type="checkbox" name="agree" id="agree">
-            <p>By clicking signup you agree to agree to our <span class="terms">terms and conditions </span></p>
-        </div>
-            <button>SIGN UP</button>
-        </form>
-       </div>
+      
        
        <script>
         let artistBtn = document.getElementById("artist-btn");

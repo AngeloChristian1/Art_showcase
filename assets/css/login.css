@@ -119,17 +119,17 @@ nav {
 .background {
   width: 100%;
   position: relative;
-  background-image: url("/assets/imgs/photograpy3.jpg");
+  background-image: url("/assets/imgs/lines.png");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-  height: 400px;
+  height: 100vh;
 }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.7);
   width: inherit;
-  height: 400px;
+  height: 100vh;
   position: absolute;
   /* top: 0;
         left: 0; */
@@ -182,25 +182,35 @@ nav {
     background: orangered;
   } */
 .artist-content {
-  margin: auto;
-  margin: 100px 20%;
+  width: 50%;
+  height: 30%;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 30px auto;
+  z-index: 3;
   transition: 0.5s;
+  /* position: absolute; */
+  transition: translate(-50%, 50%);
+  left: 27%;
+  top: 40%;
+
+  /* justify-content: space-around; */
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="text-area"] {
   padding: 15px 40px 10px 20px;
-  margin: 10px 40px;
+  margin: 30px 60px;
   border: none;
   border-bottom: 2px solid black;
   outline: none;
   background: none;
   font-size: 1em;
+  z-index: 4;
 }
 form input[type="text-area"] {
   margin-top: 40px;
-  padding: 15px 70px 15px 20px;
+  padding: 15px 70px 15px 0px;
 }
 .art-cat {
   margin-left: 500px;
@@ -214,8 +224,9 @@ form input[type="text-area"] {
   margin-left: 10px;
 }
 form button {
-  padding: 10px 15px;
-  margin: 50px 20px 20px 340px;
+  padding: 15px 35px;
+  border-radius: 40px;
+  margin: 50px 20px 20px 40px;
   background: black;
   color: white;
   box-sizing: border-box;
@@ -224,8 +235,8 @@ form button {
   transition: 0.4s;
 }
 form button:hover {
-  background: brown;
-  border: 1px solid black;
+  background: rgb(78, 1, 1);
+  /* border: 1px solid black; */
 }
 
 /* footer /////////////////////////////////////////////////////////// */
