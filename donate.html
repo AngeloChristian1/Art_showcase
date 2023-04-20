@@ -45,13 +45,7 @@
             <p class="section"><span class="sect1">DO</span><span class="sect2">NA</span><span class="sect3">TE</span></p>
             
    
-            <div id="category">
-
-                <button class="btn1">GIVE ONCE</button>
-                
-                <button class="btn2">MONTHLY</button>
-        
-               </div>        
+                  
 
         </div>
 
@@ -63,11 +57,19 @@
             If you feel like giving a head-start to the young aspiring local artists, Please do fill the form bellow
           </p>
 
+          
+
        </div>
 
+       <div id="category">
+
+        <button class="btn1">GIVE ONCE</button>
+        
+        <button class="btn2">MONTHLY</button>
+
+       </div>  
        
-       
-     <fieldset>
+     <fieldset id="once2">
        <form id="once" action="#">
 
         <input type="text" name="name" id="name" placeholder="   NAME">
@@ -83,5 +85,25 @@
     </fieldset>
 
     </div>
+
+<script>
+  const once= document.getElementsByClassName("btn1")[0];
+  const twice= document.getElementsByClassName("btn2")[0];
+  const field= document.getElementById("once2");
+  const form= document.getElementById("once");
+
+  once.addEventListener("click", () =>{
+    field.style.display="block";
+    form.style.display="block";
+  })
+
+  twice.addEventListener("click", () =>{
+    field.style.display="block";
+    form.style.display="block";
+  })
+</script>
+
+
+
 </body>
 </html>
