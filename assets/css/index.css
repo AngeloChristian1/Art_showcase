@@ -211,6 +211,7 @@ nav {
   margin: 50px auto;
   border: 2px solid black;
   border-radius: 50px;
+  background: none;
   width: 250px;
   display: flex;
 }
@@ -218,11 +219,12 @@ nav {
   height: 25px;
   margin: 3px;
 }
-.search input[type="text"] {
+.search input[type="search"] {
   border: none;
   margin: 5px;
   margin-left: 10px;
   background: none;
+  outline: none;
 }
 .search placeholder {
   margin: 5px;
