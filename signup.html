@@ -81,22 +81,22 @@
             </div>
         </div>
        <div class="artist-content" id="artist-content">
-        <form  class="form" action="#">
+        <form  class="form1" action="#">
             <div>
-                <input type="text" name="Fname" placeholder="FIRST NAME">
-                <input type="text" name="Sname" placeholder="SECOND NAME">
+                <input type="text" name="Fname" id="Fname" placeholder="FIRST NAME">
+                <input type="text" name="Sname" id="Sname" placeholder="SECOND NAME">
                 
             </div>
             <div>
-                <input type="text" name="username" placeholder="USERNAME">
-                <input type="email" name="email" placeholder="EMAIL">
+                <input type="text" name="username" id="username" placeholder="USERNAME">
+                <input type="email" name="email" id="email" placeholder="EMAIL">
                
                 
             </div>
             <div>
                 
-                <input type="text" name="Pnumber" placeholder="PHONE NUMBER">
-                <input type="text" name="username" placeholder="ART CATEGORY">
+                <input type="text" name="Pnumber" id="Pnumber" placeholder="PHONE NUMBER">
+                <input type="text" name="category" id="category" placeholder="ART CATEGORY">
                <div class="art-cat">
                     <ul>
                         <li>Painting</li>
@@ -108,26 +108,26 @@
                     </ul></div>    
             </div>
             <div>
-                <input type="password" name="password" placeholder="PASSWORD">
-                <input type="password" name="cpassword" placeholder="CONFIRM PASSWORD">
+                <input type="password" name="password" id="password" placeholder="PASSWORD">
+                <input type="password" name="cpassword" id="cpassword" placeholder="CONFIRM PASSWORD">
             </div>
             <div class="check">
             <input type="checkbox" name="agree" id="agree">
             <p>By clicking signup you agree to agree to our <span class="terms">terms and conditions </span></p>
         </div>
-            <button>SIGN UP</button>
+            <button type="submit" name="su">SIGN UP</button>
         </form>
        </div>
        <div class="artist-content user-content" id="user-content">
-        <form  class="form" action="#">
+        <form  class="form2" action="#">
             <div>
-                <input type="text" name="Fname" placeholder="FIRST NAME">
-                <input type="text" name="Sname" placeholder="SECOND NAME">
+                <input type="text" id="Fname2" placeholder="FIRST NAME">
+                <input type="text" id="Sname2" placeholder="SECOND NAME">
                 
             </div>
             <div>
-                <input type="text" name="username" placeholder="USERNAME">
-                <input type="email" name="email" placeholder="EMAIL">
+                <input type="text" id="username2" placeholder="USERNAME">
+                <input type="email" id="email2" placeholder="EMAIL">
                
                 
             </div>
@@ -137,14 +137,14 @@
                    
             </div>
             <div>
-                <input type="password" name="password" placeholder="PASSWORD">
-                <input type="password" name="cpassword" placeholder="CONFIRM PASSWORD">
+                <input type="password" id="password2" placeholder="PASSWORD">
+                <input type="password" id="cpassword2" placeholder="CONFIRM PASSWORD">
             </div>
             <div class="check">
-            <input type="checkbox" name="agree" id="agree">
+            <input type="checkbox" name="agree" id="agree1">
             <p>By clicking signup you agree to agree to our <span class="terms">terms and conditions </span></p>
         </div>
-            <button>SIGN UP</button>
+            <button type="submit" id="btn">SIGN UP</button>
         </form>
        </div>
        
@@ -227,7 +227,6 @@
     </div>
 
 
-    
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="./scripts/signup.js"></script>
