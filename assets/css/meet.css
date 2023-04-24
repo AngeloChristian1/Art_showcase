@@ -215,8 +215,9 @@
     position: relative;
     top: -20px;  
     margin-left: 20px;
-    border-radius: 5px;
-    background: orangered;
+    border: none;
+    border-radius: 40px;
+    background: black;
     color: white;
     height: 30px;
     width: 70px;
@@ -226,8 +227,9 @@
     position: relative;
     top: -20px; 
     margin-left: 40px; 
-    border-radius: 5px;
-    background: orangered;
+    border: none;
+    border-radius: 40px;
+    background: black;
     color: white;
     height: 30px;
     width: 150px;

@@ -191,7 +191,7 @@ background-color: rgba(255, 69, 0, 1);
 
 #l1{
     margin-top: 20px;
-    margin-left: 20px;
+    
 }
 
 #l2{
@@ -216,96 +216,3 @@ background-color: rgba(255, 69, 0, 1);
     margin-left: 200px;
     margin-top: -60px;
 }
-
-
-@media screen and (max-width: 400px){
-    nav{
-        display: flex;
-    background: white;
-    height: 30px;
-    /* justify-content: space-around; */
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-    }
-    nav ul{
-        margin-left: 15px;
-    }
-
-    .logo img {
-        height: 15px;
-        margin-left: 15px;
-        margin: 7px;
-
-      }
-
-      .menu {
-        display: flex;
-        /* justify-content: space-between; */
-        /* margin-right: 20px; */
-        margin: 5px 15px;
-
-        /* border: 2px solid red; */
-        color: black;
-      }
-
-      #bg{
-        margin-top: 20px;
-        background-image: url(../imgs/crcraft1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-        width: 100%;
-        position: relative;
-     } 
-     #overlay{
-        height: 300px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute; 
-     }
-
-     .sect1{
-        font-size: 20px;
-        margin-top: 150px;
-     }
-     .sect2{
-        font-size: 20px;
-        margin-top: 150px;
-     }
-     .sect3{
-        font-size: 20px;
-        margin-top: 150px;
-     }
-
-     .aspire{
-        font-size: 15px;
-     }
-
-     .btn1{
-        height: 20px;
-     }
-     .btn2{
-        height: 20px;
-        margin-left: 100px;
-     }
-
-     #once{
-        width: 100px;
-        font-size: 15px
-     }
-     #once2{
-        width: 100px;
-        margin-top: 20px;
-        padding: 20px;
-     }
-     #name, #email, #number{
-        width: 35px;
-     }
-     #once input[type=text]{
-        font-size: 15px;
-     }
-
-}
-    
