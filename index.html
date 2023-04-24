@@ -56,19 +56,156 @@
       </nav>
       <section>
         <div class="background">
+<<<<<<< Updated upstream
           <!-- <img src="./assets/imgs/woman-drawing 2.png" alt="" /> -->
           <div class="overlay">
+=======
+          <div class="lines"></div>
+         <div class="woman">
+            <img src="./assets/imgs/woman bg 1.svg" alt="">
+          </div>
+          <div class="home-content">
+>>>>>>> Stashed changes
             <h1>
               <span class="unlishing">UNLEASHING </span
               ></br><span class="rwandan">RWANDAN </span
               ><span class="talent">TALENT</span>
             </h1>
+
+            <div class="homep">
             <p>Showing the beauty of Rwandan and </br>her people through art</p>
+<<<<<<< Updated upstream
           </div>
         </div>
         <div class="search">
           <img src="./assets/imgs/search_log.svg" alt="search">
           <input type="text" placeholder="search art or artist">
+=======
+            <p>Join the best art marketplace in the region</p>
+            
+            <a href="signup.html"> CREATE ACCOUNT</a>
+         </div></div>
+        </div>
+        <div class="search">
+          <img src="./assets/imgs/search_log.svg" alt="search">
+          <input type="search" placeholder="search art or artist">
+        </div>
+        <div class="home-filter">
+          <p class="ftitle">Filters</p>
+          <p class="choice all" width="50px"> All</p>
+          <div class="sel">
+            <p class="selector">Artist</p>
+            <div class="sel2" id="fil1">
+              <div class="sel3" id="arr1"></div>
+            </div>
+          </div>
+            <div class="filter" id="filter1">
+           <p class="choice factive"> John</p>
+            <p class="choice">Robert</p>
+            <p class="choice">Mugisha</p>
+            <p class="choice">Agnes</p>
+          </div>
+
+          <div class="sel">
+            <p class="selector">Time Added</p>
+            <div class="sel2" id="fil2">
+              <div class="sel3" id="arr2"></div>
+            </div>
+          </div>
+          <div class="filter" id="filter2">
+            <p class="choice">Yesterday</p>
+            <p class="choice">This-week</p>
+            <p class="choice">Last-Year</p>
+          </div>
+
+          <div class="sel">
+            <p class="selector">Category</p>
+            <div class="sel2" id="fil3">
+              <div class="sel3" id="arr3"></div>
+            </div>
+          </div>
+          <div class="filter" id="filter3">
+            <p class="choice">Woodwork</p>
+            <p class="choice">Craft</p>
+            <p class="choice"> Painting</p>
+          </div>
+
+          <div class="sel">
+            <p class="selector">Material</p>
+            <div class="sel2" id="fil4">
+              <div class="sel3" id="arr4"></div>
+            </div>
+          </div>
+          <div class="filter" id="filter4">
+            <p class="choice">Wood</p>
+            <p class="choice">Paper</p>
+            <p class="choice">clay</p>
+            <p class="choice">oil</p>
+          </div>
+          
+
+          <script>
+            let fil1 = document.getElementById('fil1');
+            let arr1 = document.getElementById('arr1');
+            let filter1 = document.getElementById('filter1');
+            fil1.addEventListener('click', ()=>{
+              if(filter1.style.display == 'none'){
+              filter1.style.display = 'flex';
+              arr1.style.rotate = '225deg'
+             }
+             else {
+              filter1.style.display = 'none';
+              arr1.style.rotate = '45deg'
+             }
+            })
+          </script>
+          <script>
+            let fil2 = document.getElementById('fil2');
+            let arr2 = document.getElementById('arr2');
+            let filter2 = document.getElementById('filter2');
+            fil2.addEventListener('click', ()=>{
+              if(filter2.style.display == 'none'){
+              filter2.style.display = 'flex';
+              arr2.style.rotate = '225deg'
+             }
+             else {
+              filter2.style.display = 'none';
+              arr2.style.rotate = '45deg'
+             }
+            })
+          </script>
+          <script>
+            let fil3 = document.getElementById('fil3');
+            let arr3 = document.getElementById('arr3');
+            let filter3 = document.getElementById('filter3');
+            fil3.addEventListener('click', ()=>{
+              if(filter3.style.display == 'none'){
+              filter3.style.display = 'flex';
+              arr3.style.rotate = '225deg'
+             }
+             else {
+              filter3.style.display = 'none';
+              arr3.style.rotate = '45deg'
+             }
+            })
+          </script>
+          <script>
+            let fil4 = document.getElementById('fil4');
+            let arr4 = document.getElementById('arr4');
+            let filter4 = document.getElementById('filter4');
+            fil4.addEventListener('click', ()=>{
+              if(filter4.style.display == 'none'){
+              filter4.style.display = 'flex';
+              arr4.style.rotate = '225deg'
+             }
+             else {
+              filter4.style.display = 'none';
+              arr4.style.rotate = '45deg'
+             }
+            })
+          </script>
+        
+>>>>>>> Stashed changes
         </div>
         <div class="gallery">
           <div class= "photos section1">
@@ -84,13 +221,19 @@
                        <p> 48 x 36 in 120x 90 cm</p>
                   </div>
                   <div class="buy">
+<<<<<<< Updated upstream
                     <p>RWF 100,000</p>
                     <p><strong> view more</strong></p>
+=======
+                    <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+                    <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+                    <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
                   </div>
               </div>
            </div>
           
-           <div class="card card2">
+           <div class="card card2" data-filter="john painting last-year">
             <div class="card-photo card-photo2"></div>
             <div class="photo-content">
             <div class="description">
@@ -100,13 +243,19 @@
                  <p> 48 x 36 in 120x 90 cm</p>
             </div>
             <div class="buy">
+<<<<<<< Updated upstream
               <p>RWF 100,000</p>
               <p><strong> view more</strong></p>
+=======
+              <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+              <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+              <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
             </div>
         </div>
           </div>
-            <div class="card card3">
-              <div class="card-photo card-photo3"></div>
+            <div class="card card3" data-filter="robert Wood yersterday">
+              <a href="marketplace.html"><div class="card-photo card-photo3"></div></a>
             <div class="photo-content">
             <div class="description">
                 <h4>EYES ON THE WALL</h4>
@@ -115,12 +264,18 @@
                  <p> 48 x 36 in 120x 90 cm</p>
             </div>
             <div class="buy">
+<<<<<<< Updated upstream
               <p>RWF 100,000</p>
               <p><strong> view more</strong></p>
+=======
+              <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+              <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+              <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
             </div>
         </div>
           </div>
-            <div class="card card3">
+            <div class="card card3" data-filter="mugisha painting today wood">
               <div class="card-photo card-photo4"></div>
             <div class="photo-content">
             <div class="description">
@@ -130,16 +285,38 @@
                  <p> 48 x 36 in 120x 90 cm</p>
             </div>
             <div class="buy">
+<<<<<<< Updated upstream
               <p>RWF 100,000</p>
               <p><strong> view more</strong></p>
+=======
+              <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+              <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+              <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
             </div>
         </div>
           </div>
+            <!-- <div class="card card3" data-filter="mugisha painting today wood">
+              <div class="card-photo card-photo4"></div>
+            <div class="photo-content">
+            <div class="description">
+                <h4>EYES ON THE WALL</h4>
+                <p>By Robert KWIZERA</p>
+                 <p> Oil on canvas</p>
+                 <p> 48 x 36 in 120x 90 cm</p>
+            </div>
+            <div class="buy">
+              <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+              <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+              <div class="view"><p><strong> VIEW MORE</strong></p></div>
+            </div>
+        </div>
+          </div> -->
         </div>
           
          
           <div class="photos section2">
-            <div class="card card1">
+            <div class="card card1" data-filter="robert sculpture today wood">
               <div class="card-photo card-photo5"></div>
                 <div class="photo-content">
                 <div class="description">
@@ -149,13 +326,19 @@
                      <p> 48 x 36 in 120x 90 cm</p>
                 </div>
                 <div class="buy">
+<<<<<<< Updated upstream
                   <p>RWF 100,000</p>
                   <p><strong> view more</strong></p>
+=======
+                  <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+                  <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+                  <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
                 </div>
             </div>
          </div>
         
-         <div class="card card2">
+         <div class="card card2" data-filter="john sculpture today clay">
           <div class="card-photo card-photo6"></div>
           <div class="photo-content">
           <div class="description">
@@ -165,8 +348,14 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
+<<<<<<< Updated upstream
             <p>RWF 100,000</p>
             <p><strong> view more</strong></p>
+=======
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
           </div>
       </div>
         </div>
@@ -180,12 +369,18 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
+<<<<<<< Updated upstream
             <p>RWF 100,000</p>
             <p><strong> view more</strong></p>
+=======
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
           </div>
       </div>
         </div>
-          <div class="card card4">
+          <!-- <div class="card card4" data-filter="john sculpture today clay">
             <div class="card-photo card-photo8"></div>
           <div class="photo-content">
           <div class="description">
@@ -195,16 +390,22 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
+<<<<<<< Updated upstream
             <p>RWF 100,000</p>
             <p><strong> view more</strong></p>
+=======
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
           </div>
       </div>
-        </div>
+        </div> -->
           </div>
 
 
           <div class="photos section3">
-            <div class="card card5">
+            <div class="card card5" data-filter="john woodwork this-week wood">
               <div class="card-photo card-photo9"></div>
                 <div class="photo-content">
                 <div class="description">
@@ -214,13 +415,19 @@
                      <p> 48 x 36 in 120x 90 cm</p>
                 </div>
                 <div class="buy">
+<<<<<<< Updated upstream
                   <p>RWF 100,000</p>
                   <p><strong> view more</strong></p>
+=======
+                  <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+                  <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+                  <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
                 </div>
             </div>
          </div>
         
-         <div class="card card6">
+         <div class="card card6" data-filter="agnes craft this-week wood">
           <div class="card-photo card-photo10"></div>
           <div class="photo-content">
           <div class="description">
@@ -230,12 +437,18 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
+<<<<<<< Updated upstream
             <p>RWF 100,000</p>
             <p><strong> view more</strong></p>
+=======
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
           </div>
       </div>
         </div>
-          <div class="card card7">
+          <div class="card card7" data-filter="robert painting last-year wood">
             <div class="card-photo card-photo11"></div>
           <div class="photo-content">
           <div class="description">
@@ -245,12 +458,13 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
-            <p>RWF 100,000</p>
-            <p><strong> view more</strong></p>
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
           </div>
       </div>
         </div>
-          <div class="card card7">
+          <!-- <div class="card card7" data-filter="agnes painting last-year paper">
             <div class="card-photo card-photo12"></div>
           <div class="photo-content">
           <div class="description">
@@ -260,17 +474,23 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
+<<<<<<< Updated upstream
             <p>RWF 100,000</p>
             <p><strong> view more</strong></p>
+=======
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
           </div>
       </div>
-        </div>
+        </div> -->
 
           </div>
 
 
           <div class="photos section4">
-            <div class="card card1">
+            <div class="card card1" data-filter="robert sculpture last-year clay">
               <div class="card-photo card-photo13"></div>
                 <!-- <img src="./assets/imgs/one.png" alt="art"> -->
                 <div class="photo-content">
@@ -281,13 +501,19 @@
                      <p> 48 x 36 in 120x 90 cm</p>
                 </div>
                 <div class="buy">
+<<<<<<< Updated upstream
                   <p>RWF 100,000</p>
                   <p><strong> view more</strong></p>
+=======
+                  <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+                  <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+                  <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
                 </div>
             </div>
          </div>
         
-         <div class="card card2">
+         <div class="card card2" data-filter="mugisha painting today oil">
           <div class="card-photo card-photo14"></div>
           <div class="photo-content">
           <div class="description">
@@ -297,12 +523,18 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
+<<<<<<< Updated upstream
             <p>RWF 100,000</p>
             <p><strong> view more</strong></p>
+=======
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
           </div>
       </div>
         </div>
-          <div class="card card3">
+          <div class="card card3" data-filter="john woodwork today clay">
             <div class="card-photo card-photo15"></div>
           <div class="photo-content">
           <div class="description">
@@ -312,12 +544,18 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
+<<<<<<< Updated upstream
             <p>RWF 100,000</p>
             <p><strong> view more</strong></p>
+=======
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
           </div>
       </div>
         </div>
-          <div class="card card4">
+          <!-- <div class="card card4" data-filter="agnes painting today oil">
             <div class="card-photo card-photo16"></div>
           <div class="photo-content">
           <div class="description">
@@ -327,13 +565,57 @@
                <p> 48 x 36 in 120x 90 cm</p>
           </div>
           <div class="buy">
+<<<<<<< Updated upstream
             <p>RWF 100,000</p>
             <p><strong> view more</strong></p>
+=======
+            <div class="price"><div> <img src="./assets/imgs/cart2.svg" alt=""></div>
+            <div class="cart"> <p><strong> ADD TO CART</strong></p></div></div>
+            <div class="view"><p><strong> VIEW MORE</strong></p></div>
+>>>>>>> Stashed changes
           </div>
       </div>
-        </div>
+        </div> -->
           </div>
         </div>
+      </div>
+      <div class="top-title">Top Artists</div>
+      <div class="top-artist">
+        <div class="top">
+          <div class="pic pic1"></div>
+          <div class="name"> 
+            <p>MUHIZI John</p>
+            <p class="do">Sculputurist</p>
+          </div>
+        </div>
+        <div class="top">
+          <div class="pic pic2"></div>
+          <div class="name"> 
+            <p>NANZI Romeo</p>
+            <p class="do">Painter</p>
+          </div>
+        </div>
+        <div class="top">
+          <div class="pic pic3"></div>
+          <div class="name"> 
+            <p>Mwiza Anne Marie</p>
+            <p class="do">Woodworker</p>
+          </div>
+        </div>
+        <div class="top">
+          <div class="pic pic4"></div>
+          <div class="name"> 
+            <p>Teta Yvonne</p>
+            <p class="do">Canvas Painter</p>
+          </div>
+        </div>
+        <div class="top">
+          <div class="pic pic5"></div>
+          <div class="name"> 
+            <p>MUCYO RWASA</p>
+            <p class="do">Novelist</p>
+          </div> 
+      </div>
       </div>
 
       <div class="join-section">
@@ -404,5 +686,6 @@
       </footer>
       
     </div>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
