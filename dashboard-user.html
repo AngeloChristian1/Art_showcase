@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard-user</title>
+    <link rel="stylesheet" href="./assets/css/dashboard-user.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,900;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,900;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="menu-container" id="menu-container">
+            <h5 id="burger-close">x</h5>
+            <div class=" mcontent">
+                <ul>
+                  <li> <a href="index.html"> HOME</a></li>
+                  <li><a href="category.html"> CATEGORIES</a></li>
+                  <li><a href=""> ART ARCHIVE</a></li>
+                  <li><a href="inspiration-blog.html"> INSPIRATION BLOG</a></li>
+                  <li><a href="">ABOUT US</a> </li>
+                  <li><a href=""> More</a></li>
+                </ul>
+        </div>
+        </div>
+      <nav>
+        <div class="logo">
+          <img src="./assets/imgs/logo-top.png" alt="logo-top" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li> <a href="index.html"> HOME</a></li>
+            <li><a href="categories"> CATEGORIES</a></li>
+            <li><a href=""> ART ARCHIVE</a></li>
+            <li><a href="inspiration-blog.html"> INSPIRATION BLOG</a></li>
+            <li><a href="about.html">ABOUT US</a> </li>
+            <li><a href=""> More</a></li>
+          </ul>
+        </div>
+        <div class="burger" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <script>
+        let burger = document.getElementById('burger');
+        let burgerClose = document.getElementById('burger-close');
+        let menuContainer = document.getElementById("menu-container");
+        burger.addEventListener('click',() => {
+            menuContainer.style.display ='block';
+        }) 
+        burgerClose.addEventListener('click',() => {
+            menuContainer.style.display ='none';
+        }) 
+      </script>
+    <section>
+            
+    <div class="board-content">
+        <div>
+        <div class='profile' id="display_image">
+          <!-- <img src="./assets/imgs/guy2.jpg" alt=""> -->
+        </div>
+        <div>
+          <input type ="file" id="myImg" src=# accept="image/png,image/jpg" value="Change Profile">
+    <!-- <div id="display_image"> </div> -->
+        </div>
+    </div>
+    <!-- <script>
+        let image= document.getElementById("myImg")
+        let display = document.getElementById("display_image")
+
+    </script> -->
+<script>
+    const image_input = document.querySelector("#image_input")
+var uploaded="";
+image_input.addEventListener("change", function(){
+    const reader =new FileReader();
+    reader.addEventListener("load" ,() => {
+        uploaded =reader.result,
+        document.querySelector("#display_image").getElementsByClassName.background= url(${uploaded}));
+    });
+    reader.readAsDataURL(this.files[0]);
+</script>
+        <div class="userinfo">
+            <div class="username">
+                <h4>@mukunziyan</h4>
+            </div>
+            <div class="fname">
+                <p>MUKUNZI Yannick</p>
+            </div>
+            <div class="follow">
+                <div class="folowers fol">
+                    <div class="digit">00</div>
+                    <div>Followers</div>
+
+                </div>
+                <div class="following fol">
+                    <div class="digit">00</div>
+                    <div>Following</div>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="cart ca">
+                <div>
+                    <img src="./assets/imgs/cart2.svg" alt="cart"/>
+                </div>
+                <div> <p>My Cart</p></div>
+            </div>
+            <div class="purchase cart">
+                <div>
+                    <img src="./assets/imgs/purchase.svg" alt="cart"/>
+                </div>
+                <div> <p>Purchase Artwork</p></div>
+            </div>
+            <div class="upload cart">
+                <div>
+                    <img src="./assets/imgs/upload2.svg" alt="cart"/>
+                </div>
+                <div> <p>Upload Artwork</p></div>
+            </div>
+        </div>
+        <div class="settings">
+            <div>
+                <img src="./assets/imgs/setting-.svg" alt="cart"/>
+            </div>
+            <div> <p>Setting</p></div>
+        </div>
+    </div>
+    <div class="lowerContent">
+        <div class="news">
+            <div><h4>News</h4></div>
+        </div>
+        <div class="purchased">
+            <div><h4>Purchased</h4></div>
+        </div>
+        <div class="uploaded">
+            <div><h4>Uploaded</h4></div>
+        </div>
+    </div>
+    <div class="newsContent" >
+    <div class="rows">
+        <div class="read-row1">
+        <div class="thread-img">
+            <img src="./assets/imgs/download.jpg" alt="thread image">
+            <p>Thread by <span class="more"> Niwe Joseph</span></p>
+        </div>
+        <div class="thread-content">
+            <h4 class="more">What makes art unique</h4>
+            <p>The authenticity of the artist is essentisl. The work must be created with skill
+                and excellence, but arguably what elevates one piece over another is the aoul which 
+                the artist infuses into thr work they made. they may choose ...
+            </p>
+            <p class="more">Read more</p>
+        </div>
+    </div>
+    <div class="read-row1">
+        <div class="thread-img">
+            <img src="./assets/imgs/download.jpg" alt="thread image">
+            <p>Thread by <span class="more"> Niwe Joseph</span></p>
+        </div>
+        <div class="thread-content">
+            <h4 class="more">10 DIY tips for artists</h4>
+            <p>The authenticity of the artist. The work must be created with skill and excellence,
+                 but arguably what elevates one piece over another is the soul which the artist infuses into the work. </p>
+            <p class="more">Read more</p>
+        </div>
+</div></div>
+<div class="pur-con">
+<div class="purchasedContent" >
+    <div class="pur">
+        <div>
+        <img src="./assets/imgs/download.jpg" alt="thread image">
+    </div>
+    <div>
+        <p> Purchased on 01/01/2023</p>
+        <h4>Description</h4>
+        <p> Artsist <span>Nikuze Berithe</span></p>
+        <p> <span>Category: </span>Painting</p>
+        <p> <span>Type: </span>Oil on canvas</p>
+        <p> <span>Size: </span>48 x 36 in 120x 90 cm</p>
+        <a href="">View more</a>
+    </div>
+</div>
+<div class="purchasedContent" >
+    <div class="pur">
+        <div>
+        <img src="./assets/imgs/download.jpg" alt="thread image">
+    </div>
+    <div>
+        <p> Purchased on 01/01/2023</p>
+        <h4>Description</h4>
+        <p> Artsist <span>Nikuze Berithe</span></p>
+        <p> <span>Category: </span>Painting</p>
+        <p> <span>Type: </span>Oil on canvas</p>
+        <p> <span>Size: </span>48 x 36 in 120x 90 cm</p>
+        <a href="">View more</a>
+    </div>
+</div>
+</div>
+</div>
+<div class="uploadContent">
+    <div><p>No Uploads Yet</p></div>
+    
+<div>
+    <a>Upload Here</a>
+</div>
+</div>
+    </section>
+    
+
+    <script>
+        let news = document.querySelector(".news");
+        let newsDiv = document.querySelector(".newsContent");
+        let purchased = document.querySelector("news");
+        let purchasedDiv = document.querySelector("purchasedContent");
+        let upload = document.querySelector("news");
+        let uploadDiv = document.gquerySelector("uploadContent");
+    </script>
+      <footer>
+        <div class="footer-section1">
+          <div class="footer-col1">
+            <div>
+              <img src="./assets/imgs/logo-top.png" alt="logo">
+            </div>
+            <div>
+              <h4>Explore</h4>
+              <a href=""><p>Categories</p></a>
+              <a href=""><p>Artists</p></a>
+              <a href=""><p>Art Marketplace</p></a>
+              <a href=""><p>Inspirational Blog</p></a>
+              <a href=""><p>Donate</p></a>
+              <a href=""><p>Join Us</p></a>
+              <p><a href="">About Us</a></p>
+            </div>
+          </div>
+          <div class="footer-col2">
+            <h4>Address</h4>
+            <p>Kigali, Rwanda</p>
+            <p>Kg 205 st</p>
+            <ul>
+              <li>Tel: <ul>
+                <li>078888888</li>
+                <li>078888888</li>
+              </ul></li>
+            </ul>
+            <p>artshowcase@gmail.com</p>
+            <p>artshowcase.com</p>
+          </div>
+          <div class="footer-col3">
+            <h4>Visit Us on</h4>
+            <div class="footer-icon"> 
+           
+            
+              <div class="ficon"> <img src="./assets/imgs/svgs/facebook-f.svg" alt="visit us"></div>
+             <div class="ficon"> <img src="./assets/imgs/svgs/instagram.svg" alt="visit us"></div>
+               <div class="ficon"><img src="./assets/imgs/svgs/linkedin.svg" alt="visit us"></div>
+              <div class="ficon">
+            <img src="./assets/imgs/svgs/twitter.svg" alt="visit us"></div>
+              <div class="ficon"><img src="./assets/imgs/svgs/paper-plane-solid.svg" alt="visit us"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section2">
+          <div class="footer-section2-content">
+          <img src="./assets/imgs/svgs/copyright-solid.svg" alt="c">
+          <p>copyright 2023. All rights reserved. Art Showcase</p>
+        </div>
+      </div>
+      </footer>
+      
+    </div>
+  </body>
+</html>

@@ -21,30 +21,30 @@
   </head>
   <body>
     <div class="container">
-        <div class="menu-container" id="menu-container">
-            <h5 id="burger-close">x</h5>
-            <div class=" mcontent">
-                <ul>
-                  <li> <a href="index.html"> HOME</a></li>
-                  <li><a href="category.html"> CATEGORIES</a></li>
-                  <li><a href=""> ART ARCHIVE</a></li>
-                  <li><a href="active"> INSPIRATION BLOG</a></li>
-                  <li><a href="">ABOUT US</a> </li>
-                  <li><a href="more"> More</a></li>
-                </ul>
+      <div class="menu-container" id="menu-container">
+        <h5 id="burger-close">x</h5>
+        <div class="mcontent">
+          <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="category.html"> CATEGORIES</a></li>
+            <li><a href=""> ART ARCHIVE</a></li>
+            <li><a href="active"> INSPIRATION BLOG</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="more"> More</a></li>
+          </ul>
         </div>
-        </div>
+      </div>
       <nav>
         <div class="logo">
           <img src="./assets/imgs/logo-top.png" alt="logo-top" />
         </div>
         <div class="menu">
           <ul>
-            <li> <a href="index.html"> HOME</a></li>
+            <li><a href="index.html"> HOME</a></li>
             <li><a href="categories"> CATEGORIES</a></li>
             <li><a href=""> ART ARCHIVE</a></li>
             <li><a href="active"> INSPIRATION BLOG</a></li>
-            <li><a href="">ABOUT US</a> </li>
+            <li><a href="">ABOUT US</a></li>
             <li><a href="more"> More</a></li>
           </ul>
         </div>
@@ -55,46 +55,43 @@
         </div>
       </nav>
       <script>
-        let burger = document.getElementById('burger');
-        let burgerClose = document.getElementById('burger-close');
+        let burger = document.getElementById("burger");
+        let burgerClose = document.getElementById("burger-close");
         let menuContainer = document.getElementById("menu-container");
-        burger.addEventListener('click',() => {
-            menuContainer.style.display ='block';
-        }) 
-        burgerClose.addEventListener('click',() => {
-            menuContainer.style.display ='none';
-        }) 
+        burger.addEventListener("click", () => {
+          menuContainer.style.display = "block";
+        });
+        burgerClose.addEventListener("click", () => {
+          menuContainer.style.display = "none";
+        });
       </script>
       <section>
         <div class="background">
           <!-- <img src="./assets/imgs/woman-drawing 2.png" alt="" /> -->
           <div class="overlay">
             <h1>
-              <span class="unlishing">LOG IN</span
-              ><span class="rwandan"> </span
-              ></br><span class="talent"></span>
+              <span class="unlishing">LOG IN</span>
+              <!-- <span class="rwandan"> </span
+              ></br><span class="talent"></span> -->
             </h1>
-                <h3>Don't have an account <a href="signup.html">Sign Up</a> here</h3>
+            <h3>
+              Don't have an account <a href="signup.html">Sign Up</a> here
+            </h3>
+            <div class="artist-content" id="artist-content">
+              <form class="form" action="#">
+                <input type="text" name="username" placeholder="USERNAME" />
+                <input type="email" name="email" placeholder="EMAIL" />
+                <button>SIGN UP</button>
+              </form>
             </div>
+          </div>
         </div>
-       <div class="artist-content" id="artist-content">
-        <form  class="form" action="#">
-                      
-                <input type="text" name="username" placeholder="USERNAME">
-                <input type="email" name="email" placeholder="EMAIL">      
-            <button>SIGN UP</button>
-        </form>
-       </div>
-
-        
-    
-    
-    </section>
+      </section>
       <footer>
         <div class="footer-section1">
           <div class="footer-col1">
             <div>
-              <img src="./assets/imgs/logo-top.png" alt="logo">
+              <img src="./assets/imgs/logo-top.png" alt="logo" />
             </div>
             <div>
               <h4>Explore</h4>
@@ -112,36 +109,48 @@
             <p>Kigali, Rwanda</p>
             <p>Kg 205 st</p>
             <ul>
-              <li>Tel: <ul>
-                <li>078888888</li>
-                <li>078888888</li>
-              </ul></li>
+              <li>
+                Tel:
+                <ul>
+                  <li>078888888</li>
+                  <li>078888888</li>
+                </ul>
+              </li>
             </ul>
             <p>artshowcase@gmail.com</p>
             <p>artshowcase.com</p>
           </div>
           <div class="footer-col3">
             <h4>Visit Us on</h4>
-            <div class="footer-icon"> 
-           
-            
-              <div class="ficon"> <img src="./assets/imgs/svgs/facebook-f.svg" alt="visit us"></div>
-             <div class="ficon"> <img src="./assets/imgs/svgs/instagram.svg" alt="visit us"></div>
-               <div class="ficon"><img src="./assets/imgs/svgs/linkedin.svg" alt="visit us"></div>
+            <div class="footer-icon">
               <div class="ficon">
-            <img src="./assets/imgs/svgs/twitter.svg" alt="visit us"></div>
-              <div class="ficon"><img src="./assets/imgs/svgs/paper-plane-solid.svg" alt="visit us"></div>
+                <img src="./assets/imgs/svgs/facebook-f.svg" alt="visit us" />
+              </div>
+              <div class="ficon">
+                <img src="./assets/imgs/svgs/instagram.svg" alt="visit us" />
+              </div>
+              <div class="ficon">
+                <img src="./assets/imgs/svgs/linkedin.svg" alt="visit us" />
+              </div>
+              <div class="ficon">
+                <img src="./assets/imgs/svgs/twitter.svg" alt="visit us" />
+              </div>
+              <div class="ficon">
+                <img
+                  src="./assets/imgs/svgs/paper-plane-solid.svg"
+                  alt="visit us"
+                />
+              </div>
             </div>
           </div>
         </div>
         <div class="footer-section2">
           <div class="footer-section2-content">
-          <img src="./assets/imgs/svgs/copyright-solid.svg" alt="c">
-          <p>copyright 2023. All rights reserved. Art Showcase</p>
+            <img src="./assets/imgs/svgs/copyright-solid.svg" alt="c" />
+            <p>copyright 2023. All rights reserved. Art Showcase</p>
+          </div>
         </div>
-      </div>
       </footer>
-      
     </div>
   </body>
 </html>
